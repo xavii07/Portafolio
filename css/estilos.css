@@ -1,151 +1,120 @@
-/*========================
-MENU DE NAVEGACION
-========================*/
-
+/*======================== */
+/*MENU DE NAVEGACION */
+/*======================== */
 .menu {
-    background: rgb(63, 184, 175); 
-    height: 75px;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #fff;
-    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+  background: #3fb8af;
+  height: 75px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .menu__logo {
-    width: 100px;
-    margin-left: 30px;
+  width: 100px;
+  margin-left: 30px;
+  vertical-align: top;
 }
 
-
 .menu__lista {
-    display: flex;
-    list-style-type: none;   
-    margin-right: 30px; 
+  display: flex;
+  list-style-type: none;
+  margin-right: 30px;
+}
+.menu__lista.mostrar {
+  top: 65px;
 }
 
 .menu__items {
-    margin: 0 20px;
+  margin: 0 20px;
 }
-
+.menu__items .activo {
+  border-bottom: 2px solid #030303;
+}
 
 .menu__enlaces {
-    font-family: 'Sansita Swashed', cursive;
-    color: #9D4934;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    padding:7px 2px;
-    padding-bottom: 2px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom .5s ease;
-    font-weight: 300;
-    border-radius: 3px;
-    cursor: pointer;
+  font-family: "Sansita Swashed", cursive;
+  color: #9d4934;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 7px 2px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s ease;
+  font-weight: 300;
+  border-radius: 3px;
+  cursor: pointer;
 }
-
-
-.menu__enlaces:hover{
-    border-bottom: 2px solid #fff; 
-}
-
-.menu__items .activo {
-    border-bottom: 2px solid rgb(3, 3, 3);
+.menu__enlaces:hover {
+  border-bottom: 2px solid #fff;
 }
 
 .menu__icono {
-    margin-right: 30px;
-    font-size: 25px;
-    color:#000;
-    cursor: pointer;
-    display: none;
+  margin-right: 30px;
+  font-size: 25px;
+  color: #000;
+  cursor: pointer;
+  display: none;
 }
 
-.menu__lista.mostrar {
-    top: 65px;
+/*========================= */
+/*MEDIA QUERIES */
+/*========================== */
+@media screen and (max-width: 952px) {
+  .menu__enlaces {
+    font-size: 16px;
+  }
 }
+@media screen and (max-width: 850px) {
+  .menu {
+    height: 65px;
+  }
 
+  .menu__icono {
+    display: inline-block;
+  }
+  .menu__icono:hover {
+    color: #fff;
+  }
 
+  .menu__lista {
+    position: fixed;
+    width: 100%;
+    height: calc(70% - 65px);
+    background: #414141;
+    top: -100vh;
+    text-align: center;
+    transition: all 0.4s;
+    flex-direction: column;
+  }
 
+  .menu__items {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+  .menu__items .activo {
+    border-bottom: none;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*=========================
-MEDIA QUERIES
-==========================*/
-@media screen and (max-width:952px) {
-    .menu__enlaces {
-        font-size: 16px;
-    }
+  .menu__enlaces {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .menu__enlaces:hover {
+    border-bottom: none;
+    color: #fff;
+  }
 }
+@media screen and (max-width: 850px) and (orientation: landscape) {
+  .menu__items {
+    margin: 5px 0 0 0;
+  }
 
-@media screen and (max-width:850px) {
-    .menu {
-        height: 65px;
-    }
-
-    .menu__icono {
-        display: inline-flex;
-    }
-
-    .menu__icono:hover {
-        color:#fff;
-    }
-
-    .menu__lista {
-        position: fixed;
-        width:100% ;
-        height: cal(100% - 65px);
-        background: #414141;
-        top:-100vh;
-        text-align: center;
-        transition: all .4s;
-        flex-direction: column;
-    }
-
-    .menu__items {
-        margin: 30px 0 0 0;
-        line-height: 30px;
-    }
-
-    .menu__enlaces {
-        font-size: 18px;
-        font-weight: 300;
-    }
-
-    .menu__items .activo {
-        border-bottom: none;
-    }
-
-    .menu__enlaces:hover {
-        border-bottom: none;
-        color:#fff;
-    }
-}
-
-@media screen and(max-width:850px) and (orientation: landscape) {
-    .menu__items {
-        margin: 5px 0 0 0;
-    }
-
-    .menu__lista {
-        overflow: scroll;
-        height: calc(100% - 65px);
-    }
-
+  .menu__lista {
+    overflow: scroll;
+    height: calc(50% - 65px);
+  }
 }
