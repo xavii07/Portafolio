@@ -1,6 +1,6 @@
-/*======================== */
-/*MENU DE NAVEGACION */
-/*======================== */
+/*=======================
+ *  MENU DE NAVEGACION
+ * ========================*/ 
 .menu {
   background: #3fb8af;
   height: 75px;
@@ -10,6 +10,9 @@
   align-items: center;
   border-bottom: 1px solid #fff;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  overflow: hidden;
+  z-index: 200;
 }
 
 .menu__logo {
@@ -60,9 +63,9 @@
   display: none;
 }
 
-/*========================= */
-/*SLIDER */
-/*========================== */
+/*=========================
+ *  SLIDER
+ * ==========================*/
 .slide {
   position: relative;
   margin: auto;
@@ -135,8 +138,8 @@
   cursor: pointer;
   z-index: 10;
   position: absolute;
-  top: 40%;
-  left: 2%;
+  top: 50%;
+  left: 3%;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -154,8 +157,8 @@
   cursor: pointer;
   z-index: 10;
   position: absolute;
-  top: 40%;
-  right: 2%;
+  top: 50%;
+  right: 3%;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -167,12 +170,85 @@
   background: rgba(224, 36, 96, 0.2);
 }
 
-/*========================= */
-/*MEDIA QUERIES */
-/*========================== */
+/*--========================
+ * SECTION ABOUT ME
+ * ==========================*/
+.about {
+  background: url(../img/about-me/fondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Sansita Swashed", cursive;
+}
+
+.about__cont {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.about__nombre {
+  color: #398f51;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+
+.about__prof {
+  color: #777777;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.about__contImage {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about__img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.about__descripcion {
+  font-size: 18px;
+  color: #9d4934;
+  line-height: 50px;
+  padding-bottom: 50px;
+  font-weight: 200;
+}
+
+/*=========================
+ *  MEDIA QUERIES
+ * =========================*/
 @media screen and (max-width: 992px) {
   .menu__enlaces {
     font-size: 16px;
+  }
+
+  .about__nombre {
+    font-size: 30px;
+  }
+
+  .about__prof {
+    font-size: 23px;
+  }
+
+  .about__contImage {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .about__descripcion {
+    line-height: 40px;
+  }
+
+  .about__img {
+    width: 150px;
+    height: 150px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -190,7 +266,7 @@
   .menu__lista {
     position: fixed;
     width: 100%;
-    height: calc(80% - 65px);
+    height: calc(100% - 65px);
     background: #414141;
     top: -100vh;
     text-align: center;
@@ -216,9 +292,25 @@
     color: #fff;
   }
 
+  .slide {
+    height: 65vh;
+  }
+
+  .slide__ulImage {
+    height: 100%;
+  }
+
+  .slide__contImage {
+    height: 100%;
+  }
+
+  .slide__image {
+    height: 65vh;
+    width: 100vw;
+  }
+
   .slide__contTexto {
-    font-size: 12px;
-    bottom: 20px;
+    display: none;
   }
 
   .slide__circulos {
@@ -228,6 +320,9 @@
   .slide__flecha {
     font-size: 1.5em;
   }
+  .slide__flecha.avanzar {
+    top: 50%;
+  }
   .slide__flecha.avanzar:hover {
     background: transparent;
   }
@@ -235,8 +330,29 @@
   .slide__flechar {
     font-size: 1.5em;
   }
+  .slide__flechar.retroceder {
+    top: 50%;
+  }
   .slide__flechar.retroceder:hover {
     background: transparent;
+  }
+
+  .about__nombre {
+    font-size: 25px;
+  }
+
+  .about__prof {
+    font-size: 18px;
+  }
+
+  .about__contImage {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .about__descripcion {
+    font-size: 16px;
+    line-height: 35px;
   }
 }
 @media screen and (max-width: 768px) and (orientation: landscape) {
@@ -246,12 +362,42 @@
 
   .menu__lista {
     overflow: scroll;
-    height: calc(60% - 65px);
+    height: calc(100% - 65px);
+  }
+
+  .slide {
+    height: 100vh;
+  }
+
+  .slide__ulImage {
+    height: 100%;
+  }
+
+  .slide__contImage {
+    height: 100%;
+  }
+
+  .slide__image {
+    height: 100vh;
+    width: 100vw;
   }
 }
 @media screen and (max-width: 480px) {
-  .slide__contTexto {
-    display: none;
+  .slide {
+    height: 50vh;
+  }
+
+  .slide__ulImage {
+    height: 100%;
+  }
+
+  .slide__contImage {
+    height: 100%;
+  }
+
+  .slide__image {
+    height: 50vh;
+    width: 100vw;
   }
 
   .slide__circulos {
@@ -259,10 +405,39 @@
   }
 
   .slide__flecha {
-    font-size: 1.3em;
+    font-size: 1.4em;
+  }
+  .slide__flecha.avanzar {
+    top: 60%;
   }
 
   .slide__flechar {
-    font-size: 1.3em;
+    font-size: 1.4em;
+  }
+  .slide__flechar.retroceder {
+    top: 60%;
+  }
+
+  .about__nombre {
+    font-size: 18px;
+  }
+
+  .about__prof {
+    font-size: 14px;
+  }
+
+  .about__contImage {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about__descripcion {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .about__img {
+    width: 100px;
+    height: 100px;
   }
 }
