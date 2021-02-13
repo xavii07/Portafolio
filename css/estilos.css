@@ -195,6 +195,32 @@ hr {
 
 
 /*--========================
+ * PROYECTOS  
+ * ==========================*/
+ 
+
+ .proyectos__container {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+  }
+
+ .proyectos__cajas {
+   width: 90%;
+   background-color: chocolate;
+   margin: 10px 0;
+ }
+
+
+
+
+
+
+
+
+/*--========================
  * CONTACTO
  * ==========================*/
  .contacto {
