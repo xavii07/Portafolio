@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xavier GT</title>
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700&display=swap" 
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>  
+
 </head>
 <body>
     
@@ -17,91 +17,96 @@
     HEADER
 ==========================-->
 <header>
-        <nav class="menu">
-            <img class="menu__logo" src="img/logo.png" alt="Xavii07">
+    <nav class="menu">
+        <a href="index.html"><img class="menu__logo" src="img/logo.png" alt="Xavier Gaspata"></a>
 
-            <ul class="menu__lista">
-                <li class="menu__items"><a class=" activo menu__enlaces" href="#">Inicio</a></li>
-                <li class="menu__items"><a class="menu__enlaces" href="#aboutMe">Sobre Mi</a></li>
-                <li class="menu__items"><a class="menu__enlaces" href="#">Habilidades</a></li>
-                <li class="menu__items"><a class="menu__enlaces" href="#">Proyectos</a></li>
-                <li class="menu__items"><a class="menu__enlaces" href="#">Contacto</a></li>
-            </ul>
-            <span class="menu__icono"><i class="fa fa-bars"></i> </span>
-        </nav>
+        <ul class="menu__lista">
+            <li class="menu__items"><a class="menu__enlaces" href="#">Inicio</a></li>
+            <li class="menu__items"><a class="menu__enlaces" href="#aboutMe">Sobre Mi</a></li>
+            <li class="menu__items"><a class="menu__enlaces" href="#">Habilidades</a></li>
+            <li class="menu__items"><a class="menu__enlaces" href="#">Proyectos</a></li>
+            <li class="menu__items"><a class="menu__enlaces" href="#contacto">Contacto</a></li>
+        </ul>
+        <span class="menu__icono"><i class='bx bx-menu bx-flashing' ></i> </span>
+    </nav>
 </header>
 
-<!--========================
-    SLIDER
-==========================-->
-
-<div class="slide" id="slide">
-    <ul class="slide__ulImage">
-        <li class="slide__contImage">
-            <img src="img/slider/1.jpg" class="slide__image" alt="">
-            <div class="slide__contTexto">
-                <h1 class="slide__texto">HOLA MUNDO jaja</h1>
-            </div>
-        </li>
-
-        <li class="slide__contImage">
-            <img src="img/slider/2.jpg" class="slide__image" alt="">
-            <div class="slide__contTexto">
-                <h1 class="slide__texto">WEB desing</h1>
-            </div>
-        </li>
-
-        <li class="slide__contImage">
-            <img src="img/slider/3.jpg" class="slide__image" alt="">
-            <div class="slide__contTexto">
-                <h1 class="slide__texto">Xavii GT</h1>
-            </div>
-        </li>
-
-        <li class="slide__contImage">
-            <img src="img/slider/4.jpg" class="slide__image" alt="">
-            <div class="slide__contTexto">
-                <h1 class="slide__texto">JAVAScript</h1>
-            </div>
-        </li>
-    </ul>
-
-    <!--Circulos para controlar las imagenes-->
-    <ol class="slide__contCirculos" id="paginacion">  
-        <li item="1" class="slide__circulos"><span class="fa fa-circle"></span></li>
-        <li item="2" class="slide__circulos"><span class="fa fa-circle"></span></li>
-        <li item="3" class="slide__circulos"><span class="fa fa-circle"></span></li>
-        <li item="4" class="slide__circulos"><span class="fa fa-circle"></span></li>
-    </ol>
-
-
-    <!--Flechas para avanzar y retroceder Slider-->
-    <div class="slide__flechar retroceder" id="retroceder">
-        <span class="fa fa-angle-double-left"></span>
-    </div>
-    <div class="slide__flecha avanzar" id="avanzar">
-        <span class="fa fa-angle-double-right"></span>
+<section class="informacion">
+    <div class="informacion__textcontain">
+        <h1 class="informacion__saludo">Hola, <br> <span class="typed"></span></h1>
+        <p class="informacion__texto">Developer, Frelancer y Autodidacta</p>
+        <p class="informacion__texto">que me gusta aprender nuevas tecnologías.</p>
     </div>
 
-</div>
+    <div class="informacion__imgcontain">
+        <img class="informacion__img" src="img/man-1.png" alt="">
+    </div>
+</section>
 
 <!--========================
     SECTION ABOUT ME
 ==========================-->
 
- <section class="about" id="aboutMe">
-     <div class="about__cont">
-         <h1 class="about__nombre">Xavier Gaspata</h1>
-         <h2 class="about__prof">WEB - DEVELOPER</h2>
-         <div class="about__contImage">
-             <img class="about__img" src="img/about-me/xavii.png" alt="Xavier Gaspata">
-         </div>
-         <p class="about__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus vel rem dolores, aspernatur tenetur voluptatem est rerum aut quam nobis beatae necessitatibus provident, hic praesentium. Asperiores facere quasi voluptate impedit.
-            Repellendus vel rem dolores, aspernatur tenetur voluptatem est rerum aut quam nobis beatae necessitatibus provident, hic praesentium. Asperiores facere quasi voluptate impedit.
-         </p>
-         
-     </div>
- </section>
+<section class="about" id="aboutMe">
+    <div class="about__cont_cont">
+        <div class="about__cont">
+            <h1 class="titulos">SOBRE MÍ</h1>
+            <div class="about__contImage">
+                <img class="about__img" src="img/about-me/xavii.png" alt="Xavier Gaspata">
+            </div>
+
+            <h4 class="about__prof"><i class="bx bxs-city"></i> Quito-Ecuador</h4>
+
+            <p class="about__descripcion">Hello! I’m Alex Smith a self-taught & award winning Digital Designer & Developer with over five years work experience. I started in my children’s room, got pro at renowned digital agencies akij co and nork blue lebel. Now I’m based in USA, America, working for Apple fredmansky and enjoying the life in the countryside.
+
+                I have couple of hobbies but I like to travel. I have already travelled almost all the districts of our country with my father. I am fond of fruit.
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<!--========================
+    SECTION ABOUT ME
+==========================-->
+
+<section class="about" id="aboutMe">
+    <div class="about__cont_cont">
+        <div class="about__cont">
+            <h1 class="titulos">PROYECTOS</h1>
+            <div class="about__contImage">
+                <img class="about__img" src="img/about-me/xavii.png" alt="Xavier Gaspata">
+            </div>
+
+            <h4 class="about__prof"><i class="bx bxs-city"></i> Quito-Ecuador</h4>
+
+            <p class="about__descripcion">Hello! I’m Alex Smith a self-taught & award winning Digital Designer & Developer with over five years work experience. I started in my children’s room, got pro at renowned digital agencies akij co and nork blue lebel. Now I’m based in USA, America, working for Apple fredmansky and enjoying the life in the countryside.
+
+                I have couple of hobbies but I like to travel. I have already travelled almost all the districts of our country with my father. I am fond of fruit.
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<!--========================
+    SECTION CONTACTO
+==========================-->
+
+<section class="contacto" id="contacto">
+    <div class="contacto__contain">
+        <form class="contacto__form">
+            <h1 class="titulos">CONTACTO</h1>
+            <input type="text" placeholder="Nombre:">
+            <input type="email" placeholder="Email:">
+            <input type="text" placeholder="Asunto:">
+            <textarea  cols="30" rows="10" placeholder="Mensaje:"></textarea>
+            <input type="submit" value="Enviar Mensaje">
+        </form>
+    </div>
+</section>
 
 
 
@@ -118,7 +123,10 @@
 
 
 
+
+
+
+<script src="js/typed.js"></script>
 <script src="js/app.js" defer></script>
-<script src="js/slide.js" defer></script>
 </body>
 </html>

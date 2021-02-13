@@ -133,7 +133,7 @@ $tipografiaSlide: 'Indie Flower', cursive
     z-index: 10
     position: absolute
     &.retroceder
-    top: 50%
+    top: 40%
     left: 3%
     width: 35px
     height: 35px
@@ -151,7 +151,7 @@ $tipografiaSlide: 'Indie Flower', cursive
     z-index: 10
     position: absolute
     &.avanzar
-    top: 50%
+    top: 40%
     right: 3%
     width: 35px
     height: 35px
@@ -265,7 +265,7 @@ $tipografiaSlide: 'Indie Flower', cursive
             color: #fff
 
     .slide
-        height: 65vh
+        height: 60vh
 
     .slide__ulImage
         height: 100%
@@ -274,11 +274,11 @@ $tipografiaSlide: 'Indie Flower', cursive
         height: 100%
 
     .slide__image
-        height: 65vh
-        width: 100vw
+        height: 60vh
 
     .slide__contTexto
-        display: none
+        font-size: 12px
+        bottom: 20px
     
     .slide__circulos
         font-size: 13px
@@ -323,24 +323,11 @@ $tipografiaSlide: 'Indie Flower', cursive
     .menu__lista
         overflow: scroll
         height: calc(100% - 65px)
-
-    .slide
-        height: 100vh
-
-    .slide__ulImage
-        height: 100%
-
-    .slide__contImage
-        height: 100%
-
-    .slide__image
-        height: 100vh
-        width: 100vw
     
 
 @media screen and (max-width:480px) 
     .slide
-        height: 50vh
+        height: 40vh
 
     .slide__ulImage
         height: 100%
@@ -349,19 +336,21 @@ $tipografiaSlide: 'Indie Flower', cursive
         height: 100%
 
     .slide__image
-        height: 50vh
-        width: 100vw
+        height: 40vh
+          
+    .slide__contTexto
+        display: none
     
     .slide__circulos
         font-size: 10px
 
     .slide__flecha
-        font-size: 1.4em
+        font-size: 1.3em
         &.avanzar
             top: 60%
 
     .slide__flechar 
-        font-size: 1.4em
+        font-size: 1.3em
         &.retroceder
             top: 60%
 

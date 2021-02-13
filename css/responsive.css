@@ -1,0 +1,125 @@
+
+/*=========================
+ *  MEDIA QUERIES DEL MENU
+ * =========================*/
+ @media screen and (max-width: 768px) and (orientation: landscape) {
+  .menu__items {
+    margin: 5px 0 0 0;
+  }
+
+  .menu__lista {
+    overflow: scroll;
+    height: calc(100% - 65px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu__lista {
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 65px);
+    background: #0e0d0d;
+    top: -100vh;
+    text-align: center;
+    transition: all 0.4s;
+    flex-direction: column;
+    z-index: 100;
+  }
+}
+
+
+/*==========================================
+----------MÉTODO MOBILE FIRST---------------
+============================================*/
+
+@media screen and (min-width:450px) {
+  
+}
+
+/*==========================================
+------------PANTALLAS > 768-----------------
+============================================*/
+
+@media screen and (min-width:768px) {
+
+  .menu__icono {
+    display: none;
+  }
+
+  .menu__lista {
+    display: flex;
+  }
+
+  .menu__items {
+    margin: 0 20px;
+  }
+
+  .menu__enlaces {
+    margin-bottom: 0;
+  }
+
+  .informacion {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .informacion__textcontain {
+    margin: auto;
+  }
+
+  .informacion__saludo {
+    font-size: 52px;
+  }
+
+  .informacion__texto {
+    font-size: 22px;
+  }
+
+  .informacion__img {
+    width: 70%;
+  }
+}
+
+/*==========================================
+------------PANTALLAS > 992-----------------
+============================================*/
+
+@media screen and (min-width:992px) {
+
+  .informacion__saludo {
+    font-size: 58px;
+  }
+
+  .informacion__texto {
+    font-size: 25px;
+  }
+  
+}
+
+
+/*==========================================
+------------PANTALLAS > 1200-----------------
+============================================*/
+
+@media screen and (min-width:1200px) {
+
+  .menu {
+    height: 90px;
+  }
+
+  .menu__enlaces {
+    font-size: 18px;
+  }
+
+  .informacion__saludo {
+    font-size: 65px;
+    width: 90%;
+  }
+
+  .informacion__texto {
+    font-size: 30px;
+  }
+}
+
+
+
