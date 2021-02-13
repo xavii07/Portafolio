@@ -190,27 +190,35 @@ hr {
 
 .titulos {
   font-family: var(--fontTitulos);
-  
+  text-align: center;
 }
 
 
 /*--========================
  * PROYECTOS  
  * ==========================*/
- 
+ .proyectos {
+   margin: 30px auto;
+    width: 90%;
+ }
 
  .proyectos__container {
    height: 100%;
    width: 100%;
    display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
   }
 
  .proyectos__cajas {
-   width: 48%;
-   background-color: chocolate;
+   width: 70%;
    margin: 10px 0;
+ }
+
+ .proyectos__img {
+   width: 100%;
+   vertical-align: top;
  }
 
 

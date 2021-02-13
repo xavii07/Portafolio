@@ -78,6 +78,18 @@
   .informacion__img {
     width: 70%;
   }
+
+
+  .proyectos__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }
+
+   .proyectos__cajas {
+    width: 45%;
+    margin: 10px auto;
+  }
 }
 
 /*==========================================
@@ -92,6 +104,11 @@
 
   .informacion__texto {
     font-size: 25px;
+  }
+
+  .proyectos__cajas {
+    width: 32%;
+
   }
   
 }
