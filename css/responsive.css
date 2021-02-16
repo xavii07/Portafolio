@@ -108,7 +108,14 @@
 
   .proyectos__cajas {
     width: 32%;
+  }
 
+  .proyectos__img {
+    opacity: 0.8;
+  }
+
+  .proyectos__img:hover {
+    opacity: 1;
   }
   
 }
