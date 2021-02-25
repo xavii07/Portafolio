@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Xavier GT</title>
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>  
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- Boxicons CSS -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>  
+    <link rel="icon" href="img/about-me/icon.png" type="image/x-icon"/>
+   
 
 </head>
 <body>
@@ -18,7 +20,7 @@
 ==========================-->
 <header>
     <nav class="menu">
-        <a href="index.html"><img class="menu__logo" src="img/logo.png" alt="Xavier Gaspata"></a>
+        <a href="#"><img class="menu__logo" src="img/logo.png" alt="Xavier Gaspata"></a>
 
         <ul class="menu__lista">
             <li class="menu__items"><a class="menu__enlaces" href="#">Inicio</a></li>
@@ -34,7 +36,7 @@
 <section class="informacion">
     <div class="informacion__textcontain">
         <h1 class="informacion__saludo">Hola, <br> <span class="typed"></span></h1>
-        <p class="informacion__texto">Developer, Frelancer y Autodidacta</p>
+        <p class="informacion__texto">Frontend Development, Autodidacta</p>
         <p class="informacion__texto">que me gusta aprender nuevas tecnologías.</p>
     </div>
 
@@ -146,14 +148,24 @@
     <h1 class="titulos">CONTACTO</h1>
 
     <div class="contacto__contain">
+        
         <form class="contacto__form">
-            
             <input type="text" placeholder="Nombre:">
             <input type="email" placeholder="Email:">
-            <input type="text" placeholder="Asunto:">
             <textarea  cols="30" rows="10" placeholder="Mensaje:"></textarea>
             <input type="submit" value="Enviar Mensaje">
         </form>
+        
+        
+
+        <div class="redes">
+            <ul class="redes__group">
+                <li class="redes__list"><a class="redes__link" href="https://www.facebook.com/xavier.devaluado.7" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                <li class="redes__list"><a class="redes__link" href="https://twitter.com/Xavii072" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                <li class="redes__list"><a class="redes__link" href="https://github.com/xavii07?tab=repositories" target="_blank"><i class='bx bxl-github'></i></a></li>
+                <li class="redes__list"><a class="redes__link" href="https://www.linkedin.com/in/xavier-gaspata-b1688518a/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li> 
+            </ul>
+        </div>
     </div>
 </section>
 
