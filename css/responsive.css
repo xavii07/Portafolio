@@ -18,7 +18,7 @@
     position: fixed;
     width: 100%;
     height: calc(100% - 65px);
-    background: #0e0d0d;
+    background: #000;
     top: -100vh;
     text-align: center;
     transition: all 0.4s;
@@ -86,10 +86,24 @@
     justify-content: space-between;
    }
 
-   .proyectos__cajas {
+  .proyectos__cajas {
     width: 45%;
     margin: 10px auto;
   }
+
+
+  .contacto__contain {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  input[type='text'],
+ input[type='email'],
+ textarea {
+   width: 40%;
+  }
+
+  
 }
 
 /*==========================================
