@@ -148,7 +148,7 @@ hr {
 }
 
 .about__cont_cont {
-  margin-top:-70px ;
+  margin-top:-80px ;
 }
 
 .about__cont {
@@ -236,11 +236,10 @@ hr {
  * ==========================*/
  .contacto {
    width: 100%;
-   height: 100vh;
+   height: 100%;
    background: #000000;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(67, 67, 67, 0.4)), url(../img/bg-textura.png);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(67, 67, 67, 0.4)), url(../img/bg-textura.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   
+   background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(67, 67, 67, 0.1)), url(../img/ripples.png);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(67, 67, 67, 0.1)), url(../img/ripples.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  }
 
  .contacto__contain {
@@ -251,11 +250,11 @@ hr {
 
  .contacto__form {
    text-align: center;
+   padding-top: 20px;
  }
 
  input[type='text'],
- input[type='email'],
- textarea {
+ input[type='email'] {
    width: 90%;
    margin: auto;
    margin-bottom: 15px;
@@ -275,6 +274,15 @@ hr {
  } 
 
  textarea {
+  margin: auto;
+  margin-bottom: 15px;
+  appearance: none;
+  outline: none;
+  border:none;
+  padding: 10px;
+  border:1px solid #ddd;
+  font-family: var(--fontTexto);
+  border-radius: 5px;
    min-height: 150px;
    max-height: 150px;
    max-width: 90%;
@@ -307,9 +315,9 @@ hr {
 
  .redes {
    width: 90%;
-   height: 150px;
+   height: 100px;
    margin: auto;
-   margin-top: 50px;
+   margin: 20px auto;
  }
 
  .redes__group {
@@ -345,3 +353,25 @@ hr {
  }
  
   
+ /*===============================
+ ----------FOOOTER----------------
+ =============================== */
+ .footer {
+   background-color: #000;
+   width: 100%;
+   height: 65px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+
+ .footer__imagen {
+    vertical-align: top;
+    width: 60px;
+ }
+
+ .footer__texto {
+  color:var(--colorPrincipal);
+  font-family: var(--fontTexto);
+  font-size: 12px;
+ }
