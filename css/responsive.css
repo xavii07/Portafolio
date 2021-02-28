@@ -79,6 +79,31 @@
     width: 70%;
   }
 
+  /*--========================
+ * SECTION ABOUT ME
+ * ==========================*/
+ .about__prof { 
+   font-size: 17px;
+ }
+
+ .bxs-city {
+   font-size: 20px;
+ }
+
+ .about__descripcion {
+  font-size: 16px;
+  line-height: 2;
+ }
+
+
+  .proyectos__img {
+    opacity: 0.8;
+  }
+
+  .proyectos__img:hover {
+    opacity: 1;
+  }
+
 
   .proyectos__container {
     flex-direction: row;
@@ -118,6 +143,49 @@
     max-width: 90%;
   }
 
+  /*----COLORES DE REDES SOCIALES*/
+  .bxl-facebook {
+    color:#3b5998;
+    opacity: 0.6;
+  }
+
+  .bxl-twitter {
+    color:#1da1f2;
+    opacity: 0.6;
+  }
+
+  .bxl-github {
+    color:#6e5494;
+    opacity: 0.6;
+  }
+
+  .bxl-linkedin-square {
+    color:#0077b5;
+    opacity: 0.6;
+  }
+
+  .bxl-facebook:hover {
+    color:#3b5998;
+    opacity: 1;
+  }
+
+  .bxl-twitter:hover {
+    color:#1da1f2;
+    opacity:1;
+  }
+
+  .bxl-github:hover {
+    color:#6e5494;
+    opacity: 1;
+  }
+
+  .bxl-linkedin-square:hover {
+    color:#0077b5;
+    opacity: 1;
+  }
+
+
+
   .footer {
     height: 80px;
   }
@@ -151,13 +219,13 @@
     width: 32%;
   }
 
-  .proyectos__img {
-    opacity: 0.8;
-  }
+  /*--========================
+ * SECTION ABOUT ME
+ * ==========================*/
+ .about__descripcion {
+  font-size: 18px;
+ }
 
-  .proyectos__img:hover {
-    opacity: 1;
-  }
 
   input[type="text"],
   input[type="email"],
