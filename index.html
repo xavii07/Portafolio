@@ -23,17 +23,16 @@
         <a href="#"><img class="menu__logo" src="img/logo.png" alt="Xavier Gaspata"></a>
 
         <ul class="menu__lista">
-            <li class="menu__items"><a class="menu__enlaces" href="#">Inicio</a></li>
-            <li class="menu__items"><a class="menu__enlaces" href="#aboutMe">Sobre Mi</a></li>
-            <li class="menu__items"><a class="menu__enlaces" href="#">Habilidades</a></li>
-            <li class="menu__items"><a class="menu__enlaces" href="#proyectos">Proyectos</a></li>
-            <li class="menu__items"><a class="menu__enlaces" href="#contacto">Contacto</a></li>
+            <li class="menu__items"><a class="menu__enlaces" data-url="inicio" href="#inicio">Inicio</a></li>
+            <li class="menu__items"><a class="menu__enlaces" data-url="aboutMe" href="#aboutMe">Sobre Mi</a></li>
+            <li class="menu__items"><a class="menu__enlaces" data-url="proyecto" href="#proyecto">Proyectos</a></li>
+            <li class="menu__items"><a class="menu__enlaces" data-url="contacto" href="#contacto">Contacto</a></li>
         </ul>
         <span class="menu__icono"><i class='bx bx-menu bx-flashing' ></i> </span>
     </nav>
 </header>
 
-<section class="informacion">
+<section class="informacion seccion" id="inicio">
     <div class="informacion__textcontain">
         <h1 class="informacion__saludo">Hola, <br> <span class="typed"></span></h1>
         <p class="informacion__texto">Frontend Development, Autodidacta</p>
@@ -49,7 +48,7 @@
     SECTION ABOUT ME
 ==========================-->
 
-<section class="about" id="aboutMe">
+<section class="about seccion" id="aboutMe">
 
     <h1 class="titulos">SOBRE MÍ</h1>
 
@@ -63,9 +62,11 @@
             <h4 class="about__prof"><i class="bx bxs-city"></i> Quito-Ecuador</h4>
 
             <p class="about__descripcion">
-                Hola! Me considero una persona muy curiosa que he aprendido de forma autodidacta y confieso que ha sido muy gratificante conocer muchas tecnologias que existen en el mercado & award winning Digital Designer & Developer with over five years work experience. I started in my children’s room, got pro at renowned digital agencies akij co and nork blue lebel. Now I’m based in USA, America, working for Apple fredmansky and enjoying the life in the countryside.
+                Saludos! Primero que todo me considero muy apasionado y curioso por el uso de la tecnología para la automatizacion y solucion de problemas. Disfruto aprendiendo y programando lo cual me ha llevado a ser una persona Autodidacta y confieso que ha sido muy gratificante conocer muchas tecnologias que existen en el mercado & award winning Digital Designer & Developer with over five years work experience. I started in my children’s room, got pro at renowned digital agencies akij co and nork blue lebel. Now I’m based in USA, America, working for Apple fredmansky and enjoying the life in the countryside.
                 I have couple of hobbies but I like to travel. I have already travelled almost all the districts of our country with my father. I am fond of fruit.
             </p>
+
+            <button type="button" class="boton-cv"><a href="#">Descargar CV</a></button>
         </div>
     </div>
 </section>
@@ -76,13 +77,11 @@
     SECTION PROYECTOS
 ==========================-->
 
-<section class="proyectos" id="proyectos"> 
+<section class="proyectos seccion" id="proyecto"> 
 
     <h1 class="titulos">PROYECTOS</h1>
 
     <div class="proyectos__container">
-
-        
 
         <div class="proyectos__cajas">
             <div class="proyectos__imgcontain">
@@ -143,7 +142,7 @@
     SECTION CONTACTO
 ==========================-->
 
-<section class="contacto" id="contacto">
+<section class="contacto seccion" id="contacto">
 
     <h1 class="titulos">CONTACTO</h1>
 
@@ -171,7 +170,7 @@
 
 <footer class="footer">
     <img class="footer__imagen" src="img/logo.png" alt="Xavier Gaspata">
-    <p class="footer__texto">Todos los derechos &copy;xavii07 - 2021</p>
+    <p class="footer__texto"> Copyright &copy; 2021 Xavii07 - Todos los derechos</p>
 </footer>
 
 
