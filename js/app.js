@@ -11,11 +11,11 @@ addEventListener("DOMContentLoaded", () => {
 	//ocultar o hacer aparecer el menu con los enlaces y en celulares
 	let enlaces = document.querySelectorAll(".menu__enlaces")
 
-	for(i = 0; i <= enlaces.length; i++) {
-		enlaces[i].addEventListener("click", () => {
+	enlaces.forEach(enlace => {
+		enlace.addEventListener("click", () => {
 			menuLista.classList.toggle("mostrar")
 		})
-	}
+	})
 })
 
 
@@ -24,7 +24,7 @@ const secciones = document.querySelectorAll(".seccion")
 const menuEnlaces = document.querySelectorAll(".menu__enlaces")
 
 const funObserver = entradas => {
-	entradas.forEach(entrada => {
+	entradas.map(entrada => {
 		if (entrada.isIntersecting) {
 			const itemActual = Array.from(menuEnlaces).find(item => item.dataset.url === entrada.target.id)
 			itemActual.classList.add("active")
