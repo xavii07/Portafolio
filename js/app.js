@@ -1,13 +1,54 @@
 addEventListener("DOMContentLoaded", () => {
 
+	let menuLista = document.querySelector(".menu__lista")
     const btnMenu = document.querySelector(".menu__icono") 
+
+	//ocultar o hacer aparecer el menu con el icono y en celulares
     btnMenu.addEventListener("click", () => {
-        const menuLista = document.querySelector(".menu__lista")
-        menuLista.classList.toggle("mostrar")
-        
+        menuLista.classList.toggle("mostrar") 
     })
-    
+
+	//ocultar o hacer aparecer el menu con los enlaces y en celulares
+	let enlaces = document.querySelectorAll(".menu__enlaces")
+
+	for(i = 0; i <= enlaces.length; i++) {
+		enlaces[i].addEventListener("click", () => {
+			menuLista.classList.toggle("mostrar")
+		})
+	}
 })
+
+
+//Indicador del Menú
+const secciones = document.querySelectorAll(".seccion")
+const menuEnlaces = document.querySelectorAll(".menu__enlaces")
+
+const funObserver = entradas => {
+	entradas.forEach(entrada => {
+		if (entrada.isIntersecting) {
+			const itemActual = Array.from(menuEnlaces).find(item => item.dataset.url === entrada.target.id)
+			itemActual.classList.add("active")
+
+			for(const item of menuEnlaces) {
+				if (item != itemActual) {
+					item.classList.remove("active")
+				}
+			}
+		}
+		
+	})
+}
+
+const observer = new IntersectionObserver(funObserver, {
+	root: null,
+	rootMargin: "0px",
+	threshold: 0.8
+})
+
+secciones.forEach(seccion => observer.observe(seccion))
+
+	
+
 
 //Configuración de Typed para la escritura
 const typed = new Typed('.typed', {
@@ -26,3 +67,4 @@ const typed = new Typed('.typed', {
 	cursorChar: '|', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
+
