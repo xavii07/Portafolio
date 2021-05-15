@@ -68,3 +68,42 @@ const typed = new Typed('.typed', {
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
 
+
+//Validar el Formulario
+const formulario = document.querySelector("#formulario")
+const inputs = document.querySelectorAll(".input")
+
+const expresiones = {
+	nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
+	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+}
+
+formulario.addEventListener("submit", e => {
+	e.preventDefault()
+})
+
+
+const validarFormulario = e => {
+	switch (e.target.name) {
+		case "nombre":
+			if(expresiones.nombre.test(e.target.value)) {
+				document.querySelector("#input_text").classList.remove("text-incorrecto")
+			} else {
+				document.querySelector("#input_text").classList.add("text-incorrecto")
+			}
+
+		break;
+		case "correo":
+			console.log("correo")
+		break;
+		case "mensaje":
+			console.log("mensaje")
+		break;
+	}
+}
+
+inputs.forEach(input => {
+	input.addEventListener("keyup", validarFormulario)
+	input.addEventListener("blur", validarFormulario)
+})
+
