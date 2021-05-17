@@ -70,40 +70,95 @@ const typed = new Typed('.typed', {
 
 
 //Validar el Formulario
-const formulario = document.querySelector("#formulario")
-const inputs = document.querySelectorAll(".input")
 
 const expresiones = {
-	nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
+	nombre: /^[a-zA-ZÀ-ÿ\s]{4,16}$/, // Letras y espacios, pueden llevar acentos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 }
 
-formulario.addEventListener("submit", e => {
-	e.preventDefault()
-})
+const campos = {
+	nombre: false,
+	correo: false,
+}
+
+
+const formulario = document.querySelector('#formulario')
+const inputs = document.querySelectorAll('#contacto input')
 
 
 const validarFormulario = e => {
+	
 	switch (e.target.name) {
-		case "nombre":
-			if(expresiones.nombre.test(e.target.value)) {
-				document.querySelector("#input_text").classList.remove("text-incorrecto")
-			} else {
-				document.querySelector("#input_text").classList.add("text-incorrecto")
-			}
+		case 'nombre':
+			validarCampo(expresiones.nombre, e.target, 'nombre')
+			
+			break;
+		case 'correo':
+			validarCampo(expresiones.correo, e.target, 'correo')
+				
+		break;
+	
+		default:
+			break;
+	}
 
-		break;
-		case "correo":
-			console.log("correo")
-		break;
-		case "mensaje":
-			console.log("mensaje")
-		break;
+}
+
+const validarCampo = (expresion, input, campo) => {
+	if(expresion.test(input.value.trim())) {
+
+		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto')
+		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto')
+		document.querySelector(`#grupo__${campo} i`).classList.add('bxs-check-circle')
+		document.querySelector(`#grupo__${campo} i`).classList.remove('bxs-x-circle')
+		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo')
+		campos[campo] = true
+	} else {
+		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto')
+		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto')
+		document.querySelector(`#grupo__${campo} i`).classList.add('bxs-x-circle')
+		document.querySelector(`#grupo__${campo} i`).classList.remove('bxs-check-circle')
+		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo')
+		campos[campo] = false
 	}
 }
 
+
 inputs.forEach(input => {
-	input.addEventListener("keyup", validarFormulario)
-	input.addEventListener("blur", validarFormulario)
+	input.addEventListener('keyup', validarFormulario)
+	input.addEventListener('blur', validarFormulario)
 })
+
+
+
+formulario.addEventListener('submit', (e) => {
+	e.preventDefault()
+
+	const textarea = document.getElementById('asunto')
+	const mensaje = textarea.value.length > 10 
+
+	if(campos.nombre && campos.correo && mensaje) {
+		formulario.reset()
+
+		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo')
+		setTimeout(() => {
+			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo')
+		}, 3000)
+
+		document.querySelectorAll('.formulario__grupo-correcto').forEach((icon) => {
+			icon.classList.remove('formulario__grupo-correcto')
+		})
+	
+		
+	} else {
+		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo')
+		setTimeout(() => {
+			document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo')
+		}, 3000)
+	}
+})
+
+
+ 
+
 

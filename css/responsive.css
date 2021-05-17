@@ -59,29 +59,46 @@
   }
 
   .informacion {
-    flex-direction: row;
-    align-items: center;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(67, 67, 67, 0.4)), url(../img/about-me/fondo2.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(67, 67, 67, 0.79)), url(../img/about-me/fondo2.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
   }
 
   .informacion__textcontain {
     margin: auto;
+    width: 50%;
   }
 
   .informacion__saludo {
-    font-size: 52px;
+    font-size: 3.2rem;
+    flex-basis: 100%;
+    padding-top: 0;
   }
 
   .informacion__texto {
-    font-size: 22px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .informacion__imgcontain {
+    width: 50%;
+    margin:auto ;
+    width: 300px;
+    display: block;
   }
 
   .informacion__img {
-    width: 70%;
+    width: 100%;
   }
 
   /*--========================
  * SECTION ABOUT ME
  * ==========================*/
+
  .about__prof { 
    font-size: 17px;
  }
@@ -94,6 +111,11 @@
   font-size: 16px;
   line-height: 2;
  }
+
+ .about__img {
+  width: 150px;
+  height: 150px;
+}
 
 
   .proyectos__img {
@@ -109,6 +131,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 80%;
    }
 
   .proyectos__cajas {
@@ -116,16 +139,16 @@
     margin: 10px auto;
   }
 
-  .contacto__form {
-    padding-top: 0;
+  /*---------FORMULARIO---*/
+  .formulario__form {
+    width: 80%;
   }
 
-  .contacto__contain {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px 0 60px 0;
-    align-items: center;
+  .redes {
+    width: 50%;
+    margin: 7rem auto;
   }
+
 
   .redes__group {
     padding-bottom: 55px;
@@ -138,56 +161,45 @@
     padding:0;
  }
 
-  textarea {
-    min-width: 90%;
-    max-width: 90%;
-  }
+  
 
   /*----COLORES DE REDES SOCIALES*/
   .bxl-facebook {
-    color:#3b5998;
-    opacity: 0.6;
+    color:#fff;
   }
 
   .bxl-twitter {
-    color:#1da1f2;
-    opacity: 0.6;
+    color:#fff;
   }
 
   .bxl-github {
-    color:#6e5494;
-    opacity: 0.6;
+    color:#fff;
   }
 
   .bxl-linkedin-square {
-    color:#0077b5;
-    opacity: 0.6;
+    color:#fff;
   }
 
   .bxl-facebook:hover {
     color:#3b5998;
-    opacity: 1;
   }
 
   .bxl-twitter:hover {
     color:#1da1f2;
-    opacity:1;
   }
 
   .bxl-github:hover {
     color:#6e5494;
-    opacity: 1;
   }
 
   .bxl-linkedin-square:hover {
     color:#0077b5;
-    opacity: 1;
   }
 
 
 
   .footer {
-    height: 80px;
+    height: 90px;
   }
 
   .footer__texto {
@@ -208,12 +220,13 @@
 @media screen and (min-width:992px) {
 
   .informacion__saludo {
-    font-size: 58px;
+    font-size: 3.4rem;
   }
 
-  .informacion__texto {
-    font-size: 25px;
+  .informacion__imgcontain {
+    width: 400px;
   }
+
 
   .proyectos__cajas {
     width: 32%;
@@ -222,25 +235,61 @@
   /*--========================
  * SECTION ABOUT ME
  * ==========================*/
+
+ .about__cont {
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
  .about__descripcion {
   font-size: 18px;
+  width: 50%;
  }
 
+ .about__contimg-city {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
 
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    max-width: 540px;
-    min-width: 540px;
+ .about__cont_cont {
+   margin-top: 4rem;
   }
+  
+  .about__img {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+
+.about__prof {
+  text-align: start;
+  
+}
+
+  /*---------FORMULARIO---*/
+  .formulario__form {
+    width: 50%;
+  }
+
+  .redes {
+    width: 40%;
+    margin: 6rem auto;
+  }
+
+
 
   .redes__list {
     margin: 0 45px 25px;
   }
 
   .footer {
-    height: 90px;
+    height: 100px;
   }
+
 
   .footer__imagen {
     width: 90px;
@@ -263,24 +312,10 @@
     font-size: 18px;
   }
 
-  .informacion__saludo {
-    font-size: 65px;
-    width: 90%;
-  }
 
-  .informacion__texto {
-    font-size: 30px;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    max-width: 700px;
-    min-width: 700px;
-  }
 
   .footer {
-    height: 100px;
+    height: 120px;
   }
 
   .footer__imagen {

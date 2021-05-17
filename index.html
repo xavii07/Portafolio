@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Xavier Gaspata desarollador Frontend vivo en Quito - Ecuador">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xavier GT</title>
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>  
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" href="img/about-me/icon.png" type="image/x-icon"/>
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 <body>
@@ -20,7 +21,7 @@
 ==========================-->
 <header>
     <nav class="menu">
-        <a href="#"><img class="menu__logo" src="img/about-me/logo.png" alt="Xavier Gaspata"></a>
+        <a href="#"></a><img class="menu__logo" src="img/about-me/logo.png" alt="Xavier Gaspata"></a>
 
         <ul class="menu__lista">
             <li class="menu__items"><a class="menu__enlaces" data-url="inicio" href="#inicio">Inicio</a></li>
@@ -33,14 +34,16 @@
 </header>
 
 <section class="informacion seccion" id="inicio">
-    <div class="informacion__textcontain">
+    <div class="informacion__textcontain animate__animated animate__slideInRight">
         <h1 class="informacion__saludo">Hola, <br> <span class="typed"></span></h1>
-        <p class="informacion__texto">Frontend Development, Autodidacta</p>
-        <p class="informacion__texto">que me gusta aprender nuevas tecnologías.</p>
+        <div class="informacion__texto">
+            <p>Frontend Development, Autodidacta</p>
+            <p>que me gusta aprender nuevas tecnologías.</p>
+        </div>
     </div>
 
     <div class="informacion__imgcontain">
-        <img class="informacion__img" src="img/about-me/man-1.png" alt="">
+        <img class="informacion__img animate__animated animate__slideInLeft" src="img/about-me/man-1.png" alt="">
     </div>
 </section>
 
@@ -55,23 +58,25 @@
     <div class="about__cont_cont">
         <div class="about__cont">
            
-            <div class="about__contImage">
-                <img class="about__img" src="img/about-me/xavii.png" alt="Xavier Gaspata">
+            <div class="about__contimg-city">
+                <div class="about__contImage">
+                    <img class="about__img" src="img/about-me/xavii.png" alt="Xavier Gaspata">
+                </div>
+                
+                <h4 class="about__prof"><i class="bx bxs-city"></i> Quito-Ecuador</h4>
+                
             </div>
-
-            <h4 class="about__prof"><i class="bx bxs-city"></i> Quito-Ecuador</h4>
-
             <p class="about__descripcion">
                 Saludos! Primero que todo me considero muy apasionado y curioso por el uso de la tecnología para la automatizacion y solucion de problemas. Disfruto aprendiendo y programando lo cual me ha llevado a ser una persona Autodidacta y confieso que ha sido muy gratificante conocer muchas tecnologias que existen en el mercado & award winning Digital Designer & Developer with over five years work experience. I started in my children’s room, got pro at renowned digital agencies akij co and nork blue lebel. Now I’m based in USA, America, working for Apple fredmansky and enjoying the life in the countryside.
                 I have couple of hobbies but I like to travel. I have already travelled almost all the districts of our country with my father. I am fond of fruit.
             </p>
 
-            <button type="button" class="boton-cv"><a href="#">Descargar CV</a></button>
+            <button type="button" class="boton"><a rel="noopener noreferrer" class="boton__enlacecv" href="#">Descargar CV</a></button>
         </div>
     </div>
 </section>
 
-<hr>
+
 
 <!--========================
     SECTION PROYECTOS
@@ -85,70 +90,70 @@
 
         <div class="proyectos__cajas">
             <div class="proyectos__imgcontain">
-                <a href="https://xavii07.github.io/RESTAURANTE/" target="_blank"><img class="proyectos__img" src="img/proyectos/1.png" alt=""></a>
+                <a rel="noopener noreferrer" href="https://xavii07.github.io/RESTAURANTE/" target="_blank"><img class="proyectos__img" src="img/proyectos/1.png" alt=""></a>
             </div>
         </div>
         <div class="proyectos__cajas">
             <div class="proyectos__imgcontain">
-                <a href="https://601447f2ec188f23413c11c0--hopeful-hermann-646ef5.netlify.app/" target="_blank"><img class="proyectos__img" src="img/proyectos/2.png" alt=""></a>
+                <a rel="noopener noreferrer" href="https://601447f2ec188f23413c11c0--hopeful-hermann-646ef5.netlify.app/" target="_blank"><img class="proyectos__img" src="img/proyectos/2.png" alt=""></a>
             </div>
         </div>
         <div class="proyectos__cajas">
             <div class="proyectos__imgcontain">
-                <a href="https://6011fa2fe3dc1521994186ab--hopeful-hermann-646ef5.netlify.app/?fbclid=IwAR0KC6uTUg87NpCKvYl8H6qeUEbIEy1n_eMeyEAVUT_mwm-UrDKEIhAhZXA" target="_blank"><img class="proyectos__img" src="img/proyectos/3.png" alt=""></a>
+                <a rel="noopener noreferrer" href="https://6011fa2fe3dc1521994186ab--hopeful-hermann-646ef5.netlify.app/?fbclid=IwAR0KC6uTUg87NpCKvYl8H6qeUEbIEy1n_eMeyEAVUT_mwm-UrDKEIhAhZXA" target="_blank"><img class="proyectos__img" src="img/proyectos/3.png" alt=""></a>
             </div>
         </div>
         <div class="proyectos__cajas">
             <div class="proyectos__imgcontain">
-                <a href="https://601091384e99460b23d7deb3--hopeful-hermann-646ef5.netlify.app/?fbclid=IwAR0KC6uTUg87NpCKvYl8H6qeUEbIEy1n_eMeyEAVUT_mwm-UrDKEIhAhZXA" target="_blank"><img class="proyectos__img" src="img/proyectos/4.png" alt=""></a>
+                <a rel="noopener noreferrer" href="https://601091384e99460b23d7deb3--hopeful-hermann-646ef5.netlify.app/?fbclid=IwAR0KC6uTUg87NpCKvYl8H6qeUEbIEy1n_eMeyEAVUT_mwm-UrDKEIhAhZXA" target="_blank"><img class="proyectos__img" src="img/proyectos/4.png" alt=""></a>
             </div>
         </div>
         <div class="proyectos__cajas">
             <div class="proyectos__imgcontain">
-                <a href="https://601090504e99460dfed7de34--hopeful-hermann-646ef5.netlify.app/?fbclid=IwAR31x-x3700QYkfxOPZy-J4lPfGPp1Y2Ho-PiPNFG67jeYT89FM1CTARJJY" target="_blank"><img class="proyectos__img" src="img/proyectos/5.png" alt=""></a>
+                <a rel="noopener noreferrer" href="https://601090504e99460dfed7de34--hopeful-hermann-646ef5.netlify.app/?fbclid=IwAR31x-x3700QYkfxOPZy-J4lPfGPp1Y2Ho-PiPNFG67jeYT89FM1CTARJJY" target="_blank"><img class="proyectos__img" src="img/proyectos/5.png" alt=""></a>
             </div>
         </div>
         <div class="proyectos__cajas">
             <div class="proyectos__imgcontain">
-                <a href="https://60108ffb93030b0cae61552a--hopeful-hermann-646ef5.netlify.app/?fbclid=IwAR0udn00NObBtBw3nfyUeA8Q4OgnrQamk5SXq2dOAftjVPms06cKmXggIVs" target="_blank"><img class="proyectos__img" src="img/proyectos/6.png" alt=""></a>
+                <a rel="noopener noreferrer" href="https://60108ffb93030b0cae61552a--hopeful-hermann-646ef5.netlify.app/?fbclid=IwAR0udn00NObBtBw3nfyUeA8Q4OgnrQamk5SXq2dOAftjVPms06cKmXggIVs" target="_blank"><img class="proyectos__img" src="img/proyectos/6.png" alt=""></a>
             </div>
         </div>
         <div class="proyectos__cajas">
             <div class="proyectos__imgcontain">
-                <a href="https://6010900f2a7ccf1002c01580--hopeful-hermann-646ef5.netlify.app/?fbclid=IwAR3jPAEuiie7J0SSsbPnrCBuzaT-XOmYsAEhSYAd_DLu6DnQfOiI7Qa-i5k" target="_blank"><img class="proyectos__img" src="img/proyectos/7.png" alt=""></a>
+                <a rel="noopener noreferrer" href="https://6010900f2a7ccf1002c01580--hopeful-hermann-646ef5.netlify.app/?fbclid=IwAR3jPAEuiie7J0SSsbPnrCBuzaT-XOmYsAEhSYAd_DLu6DnQfOiI7Qa-i5k" target="_blank"><img class="proyectos__img" src="img/proyectos/7.png" alt=""></a>
             </div>
         </div>
         <div class="proyectos__cajas">
             <div class="proyectos__imgcontain">
-                <a href="https://6010906eaa429d0f25188dc4--hopeful-hermann-646ef5.netlify.app/?fbclid=IwAR3ZqsfGd--TtX7DqqW3XNF_7sEeIO6QQcXLN9DFXm31IOtFQSZMFxJidlw" target="_blank"><img class="proyectos__img" src="img/proyectos/8.png" alt=""></a>
+                <a rel="noopener noreferrer" href="https://6010906eaa429d0f25188dc4--hopeful-hermann-646ef5.netlify.app/?fbclid=IwAR3ZqsfGd--TtX7DqqW3XNF_7sEeIO6QQcXLN9DFXm31IOtFQSZMFxJidlw" target="_blank"><img class="proyectos__img" src="img/proyectos/8.png" alt=""></a>
             </div>
         </div>
         <div class="proyectos__cajas">
             <div class="proyectos__imgcontain">
-                <a href="https://xavii07.github.io/Clientes/?fbclid=IwAR3FuKGxE855DRBjoHomEgCb6LJ_qZwXPbZmZsAZFhkMBWAYSh2W4zPq3Sg" target="_blank"><img class="proyectos__img" src="img/proyectos/9.png" alt=""></a>
+                <a rel="noopener noreferrer" href="https://xavii07.github.io/Clientes/?fbclid=IwAR3FuKGxE855DRBjoHomEgCb6LJ_qZwXPbZmZsAZFhkMBWAYSh2W4zPq3Sg" target="_blank"><img class="proyectos__img" src="img/proyectos/9.png" alt=""></a>
             </div>
         </div>
         <div class="proyectos__cajas">
             <div class="proyectos__imgcontain">
-                <a href="https://xavii07.github.io/Random-Color/html/hsl.html?fbclid=IwAR2aXv42lN7JSO8QSDIGYSuNWQA-orWxr3XIMnj_BCM8WfdiPstVaBXkop0" target="_blank"><img class="proyectos__img" src="img/proyectos/10.png" alt=""></a>
+                <a rel="noopener noreferrer" href="https://xavii07.github.io/Random-Color/html/hsl.html?fbclid=IwAR2aXv42lN7JSO8QSDIGYSuNWQA-orWxr3XIMnj_BCM8WfdiPstVaBXkop0" target="_blank"><img class="proyectos__img" src="img/proyectos/10.png" alt=""></a>
             </div>
         </div>
 
         <div class="proyectos__cajas">
             <div class="proyectos__imgcontain">
-                <a href="https://xavii07.github.io/PasswordGenerator/?fbclid=IwAR1AGLlydT0aNaetRhUM5nex_423wUyAPfP08IjxtOEXRVOd0PyTT7iCivI" target="_blank"><img class="proyectos__img" src="img/proyectos/11.png" alt=""></a>
+                <a rel="noopener noreferrer" href="https://xavii07.github.io/PasswordGenerator/?fbclid=IwAR1AGLlydT0aNaetRhUM5nex_423wUyAPfP08IjxtOEXRVOd0PyTT7iCivI" target="_blank"><img class="proyectos__img" src="img/proyectos/11.png" alt=""></a>
             </div>
         </div>
     </div>
 </section>
 
-<hr>
+
 
 <!--========================
     SECTION CONTACTO
 ==========================-->
 
-<section class="contacto seccion" id="contacto">
+<!--<section class="contacto seccion" id="contacto">
 
     <h1 class="titulos">CONTACTO</h1>
 
@@ -199,19 +204,80 @@
             <textarea  class="input" cols="30" name="mensaje" rows="10" placeholder="Mensaje:"></textarea>
             <input type="submit" value="Enviar Mensaje">
         </form>
-        
-    -->
+    
+    </div>
+</section>
+-->
+
+    <section class="formulario" id="contacto">
+
+        <h1 class="titulos">CONTÁCTAME</h1>
+
+        <form action="" class="formulario__form" id='formulario'>
+
+            <div class="formulario__grupo" id='grupo__nombre'>
+                <label for="nombre" class="formulario__label">Nombre:</label>
+                <div class="formulario__grupo-input">
+                    <input name='nombre' type="text" placeholder="Alguien Genial" class="formulario__input" id='nombre'>
+                    <i class='formulario__validacion-estado bx bxs-x-circle'></i>
+                </div>
+                <p class="formulario__input-error">Ingresa solamente letras</p>
+            </div>
+            
+            <div class="formulario__grupo" id='grupo__correo'>
+                <label for="correo" class="formulario__label">Correo Electronico:</label>
+                <div class="formulario__grupo-input">
+                    <input name='correo' type="email" placeholder="alguien123@gmail.com" class="formulario__input" id='correo'>
+                    <i class='formulario__validacion-estado bx bxs-x-circle'></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede tener letras, numeros, puntos, guion y guiones bajos</p>
+            </div>
+            
+            <div class="formulario__grupo" id='grupo__asunto'>
+                <label for="asunto" class="formulario__label"><i class='bx bxs-envelope-open'></i> Mensaje:</label>
+                <div class="formulario__grupo-input">
+                    <textarea  class="formulario__input" name="asunto" id="asunto" placeholder="Mensaje"></textarea>   
+                </div>
+            </div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class='bx bxs-error-alt'></i><b>Error:</b> Por favor rellena todos los campos</p>                
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id='formulario__mensaje-exito'>Mensaje enviado Correctamente</p>
+            </div>
+        </form>
 
         <div class="redes">
             <ul class="redes__group">
-                <li class="redes__list"><a class="redes__link" href="https://www.facebook.com/xavier.devaluado.7" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                <li class="redes__list"><a class="redes__link" href="https://twitter.com/Xavii072" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                <li class="redes__list"><a class="redes__link" href="https://github.com/xavii07?tab=repositories" target="_blank"><i class='bx bxl-github'></i></a></li>
-                <li class="redes__list"><a class="redes__link" href="https://www.linkedin.com/in/xavier-gaspata-b1688518a/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li> 
+                <li class="redes__list"><a rel="noopener noreferrer" class="redes__link" href="https://twitter.com/Xavii072" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                <li class="redes__list"><a rel="noopener noreferrer" class="redes__link" href="https://www.facebook.com/xavier.devaluado.7" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                <li class="redes__list"><a rel="noopener noreferrer" class="redes__link" href="https://github.com/xavii07?tab=repositories" target="_blank"><i class='bx bxl-github'></i></a></li>
+                <li class="redes__list"><a rel="noopener noreferrer" class="redes__link" href="https://www.linkedin.com/in/xavier-gaspata-b1688518a/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li> 
             </ul>
         </div>
-    </div>
-</section>
+
+    </section>
+
+
+    <!--======================
+    ------REDES SOCIALES ------
+    =======================-->
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <footer class="footer">
     <img class="footer__imagen" src="img/about-me/logo.png" alt="Xavier Gaspata">
