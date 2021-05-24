@@ -18,7 +18,7 @@
     position: fixed;
     width: 100%;
     height: calc(100% - 65px);
-    background: #000;
+    background: rgb(29, 31, 34);
     top: -100vh;
     text-align: center;
     transition: all 0.4s;
@@ -161,40 +161,14 @@
     padding:0;
  }
 
+  .formulario {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, rgba(29, 31, 34, 0.999), rgba(0, 0, 0, 0.85)),url(../img/about-me/fondo4.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+  }
+
   
-
-  /*----COLORES DE REDES SOCIALES*/
-  .bxl-facebook {
-    color:#fff;
-  }
-
-  .bxl-twitter {
-    color:#fff;
-  }
-
-  .bxl-github {
-    color:#fff;
-  }
-
-  .bxl-linkedin-square {
-    color:#fff;
-  }
-
-  .bxl-facebook:hover {
-    color:#3b5998;
-  }
-
-  .bxl-twitter:hover {
-    color:#1da1f2;
-  }
-
-  .bxl-github:hover {
-    color:#6e5494;
-  }
-
-  .bxl-linkedin-square:hover {
-    color:#0077b5;
-  }
 
 
 

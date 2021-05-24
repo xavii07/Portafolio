@@ -23,6 +23,7 @@ addEventListener("DOMContentLoaded", () => {
 const secciones = document.querySelectorAll(".seccion")
 const menuEnlaces = document.querySelectorAll(".menu__enlaces")
 
+
 const funObserver = entradas => {
 	entradas.map(entrada => {
 		if (entrada.isIntersecting) {
@@ -41,8 +42,8 @@ const funObserver = entradas => {
 
 const observer = new IntersectionObserver(funObserver, {
 	root: null,
-	rootMargin: "0px",
-	threshold: 0.8
+	rootMargin: "100px 0px 0px 0px",
+	threshold: 0.3
 })
 
 secciones.forEach(seccion => observer.observe(seccion))
