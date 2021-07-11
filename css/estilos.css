@@ -19,7 +19,9 @@ html {
   color:rgb(192, 185, 185);
 }
 
-
+[id] {
+  scroll-margin-top: 3.5rem;
+}
 
 
 /*=======================
@@ -85,6 +87,37 @@ html {
 
 .active {
   color: #fff;
+}
+
+/*------------------------------
+--------BOTON SCROLL TOP-----
+===============================*/
+.scroll__top-boton {
+  position: fixed;
+  z-index: 999;
+  width: 2.7em;
+  height: 2.7rem;
+  border-radius: 30%;
+  border:none;
+  bottom: 4vh;
+  right: 4vw;
+  background-color: rgb(29, 31, 34);
+  cursor: pointer;
+  transition: all .5s ease-out;
+  color:var(--colorPrincipal);
+}
+
+.scroll__top-boton .bx {
+  font-size: 2rem;
+}
+
+.scroll__top-boton:hover {
+  background: var(--principalOpacity);
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 /*------------------------------
@@ -328,22 +361,6 @@ html {
    opacity: 0;
  }
 
- .formulario__mensaje {
-    height: 2.8125rem;
-    line-height: 2.8125rem;
-    background-color:#bb2929;
-    color:#fff;
-    padding: 0 3px;
-    border-radius: 3px;
-    display: none;
-    font-size: 0.8rem;
-    text-align: center;
- }
-
- .formulario__mensaje-activo {
-   display: block;
- } 
-
  .formulario__grupo-btn-enviar {
    display: flex;
    flex-direction: column;
@@ -386,7 +403,7 @@ html {
     opacity: 1;
  }
 
- .formulario__grupo-incorrecto .formulario__label {
+ .formulario__grupo-incorrecto > label {
    color:#bb2929;
  }
  
@@ -402,9 +419,8 @@ html {
  textarea {
    min-height: 150px;
    max-height: 150px;
-   max-width: 100%;
-   min-width: 100%;
    line-height: 1.5rem !important;
+   resize: none;
  }
 
  

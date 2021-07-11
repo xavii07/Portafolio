@@ -76,8 +76,6 @@
     </div>
 </section>
 
-
-
 <!--========================
     SECTION PROYECTOS
 ==========================-->
@@ -135,40 +133,35 @@
 
         <h1 class="titulos">CONTÁCTAME</h1>
 
-        <form action="" class="formulario__form" id='formulario'>
+        <form class="formulario__form">
 
             <div class="formulario__grupo" id='grupo__nombre'>
-                <label for="nombre" class="formulario__label">Nombre:</label>
+                <label for="nombrel" class="formulario__label">Nombre:</label>
                 <div class="formulario__grupo-input">
-                    <input name='nombre' type="text" placeholder="Alguien Genial" class="formulario__input" id='nombre'>
+                    <input validar title="Ingresa solamente letras" name='nombre' type="text" placeholder="Alguien Genial" class="formulario__input" id='nombrel' pattern="^\S[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
                     <i class='formulario__validacion-estado bx bxs-x-circle'></i>
                 </div>
-                <p class="formulario__input-error">Ingresa solamente letras</p>
             </div>
             
             <div class="formulario__grupo" id='grupo__correo'>
-                <label for="correo" class="formulario__label">Correo Electronico:</label>
+                <label for="correol" class="formulario__label">Correo Electronico:</label>
                 <div class="formulario__grupo-input">
-                    <input name='correo' type="email" placeholder="alguien123@gmail.com" class="formulario__input" id='correo'>
+                    <input validar title="El correo solo puede tener letras, numeros, puntos, guion y guiones bajos" name='correo' type="email" placeholder="alguien123@gmail.com" class="formulario__input" id='correol' pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
                     <i class='formulario__validacion-estado bx bxs-x-circle'></i>
                 </div>
-                <p class="formulario__input-error">El correo solo puede tener letras, numeros, puntos, guion y guiones bajos</p>
             </div>
             
             <div class="formulario__grupo" id='grupo__asunto'>
-                <label for="asunto" class="formulario__label"><i class='bx bxs-envelope-open'></i> Mensaje:</label>
+                <label for="asuntol" class="formulario__label"><i class='bx bxs-envelope-open'></i> Mensaje:</label>
                 <div class="formulario__grupo-input">
-                    <textarea  class="formulario__input" name="asunto" id="asunto" placeholder="Mensaje"></textarea>   
+                    <textarea validar  class="formulario__input" name="asunto" id="asuntol" placeholder="Mensaje" title="Ingresa un Mensaje" data-pattern="^\S.{1,255}$"></textarea>   
+                    <i class='formulario__validacion-estado bx bxs-x-circle'></i>
                 </div>
-            </div>
-
-            <div class="formulario__mensaje" id="formulario__mensaje">
-                <p><i class='bx bxs-error-alt'></i><b>Error:</b> Por favor rellena todos los campos</p>                
             </div>
 
             <div class="formulario__grupo formulario__grupo-btn-enviar">
                 <button type="submit" class="formulario__btn">Enviar</button>
-                <p class="formulario__mensaje-exito" id='formulario__mensaje-exito'>Mensaje enviado Correctamente</p>
+                <p class="formulario__mensaje-exito">Mensaje enviado Correctamente</p>
             </div>
         </form>
         
@@ -186,32 +179,24 @@
 
     </section>
 
-    
+<!--======================
+--------BTN SCROLL -------
+=======================-->
+<button class="scroll__top-boton hidden">
+    <i class='bx bx-up-arrow' ></i>
+</button>
 
+    
+<!--======================
+---------FOOTER-----------
+=======================-->
 <footer class="footer">
     <img class="footer__imagen" src="img/about-me/logo.png" alt="Xavier Gaspata">
-    <p class="footer__texto"> Copyright &copy; 2021 Xavii07 - Todos los derechos</p>
+    <p class="footer__texto"> Copyright &copy; 2021 Xavii07 - Todos los derechos Reservados</p>
 </footer>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="js/typed.js"></script>
-<script src="js/app.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/app.js" type="module"></script>
 </body>
 </html>
