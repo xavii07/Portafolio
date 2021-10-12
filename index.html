@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Xavier Gaspata desarollador Frontend vivo en Quito - Ecuador">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xavier GT</title>
-    <!-- Boxicons CSS -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>  
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" href="img/about-me/icon.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>  
+    
+
+  
 
 </head>
 <body>
@@ -34,7 +35,7 @@
 </header>
 
 <section class="informacion seccion" id="inicio">
-    <div class="informacion__textcontain animate__animated animate__slideInRight">
+    <div class="informacion__textcontain">
         <h1 class="informacion__saludo">Hola, <br> <span class="typed"></span></h1>
         <div class="informacion__texto">
             <p>Frontend Development, Autodidacta</p>
@@ -43,9 +44,11 @@
     </div>
 
     <div class="informacion__imgcontain">
-        <img class="informacion__img animate__animated animate__slideInLeft" src="img/about-me/man-1.png" alt="">
+        <img class="informacion__img" src="img/about-me/man-1.png" alt="programador">
     </div>
 </section>
+
+
 
 <!--========================
     SECTION ABOUT ME
@@ -53,28 +56,50 @@
 
 <section class="about seccion" id="aboutMe">
 
-    <h1 class="titulos">SOBRE MÍ</h1>
+    <h1 class="titulos">SOBRE MI</h1>
 
     <div class="about__cont_cont">
         <div class="about__cont">
-           
             <div class="about__contimg-city">
-                <div class="about__contImage">
-                    <img class="about__img" src="img/about-me/xavii.png" alt="Xavier Gaspata">
-                </div>
-                
+                <img class="about__img" src="img/about-me/xavii.png" alt="Xavier Gaspata">
                 <h4 class="about__prof"><i class="bx bxs-city"></i> Quito-Ecuador</h4>
-                
             </div>
-            <p class="about__descripcion">
-                Saludos! Primero que todo me considero muy apasionado y curioso por el uso de la tecnología para la automatizacion y solucion de problemas. Disfruto aprendiendo y programando lo cual me ha llevado a ser una persona Autodidacta y confieso que ha sido muy gratificante conocer muchas tecnologias que existen en el mercado & award winning Digital Designer & Developer with over five years work experience. I started in my children’s room, got pro at renowned digital agencies akij co and nork blue lebel. Now I’m based in USA, America, working for Apple fredmansky and enjoying the life in the countryside.
-                I have couple of hobbies but I like to travel. I have already travelled almost all the districts of our country with my father. I am fond of fruit.
-            </p>
-
-            <button type="button" class="boton"><a rel="noopener noreferrer" class="boton__enlacecv" href="#">Descargar CV</a></button>
+            <div class="about__descripcion">
+                <p>Soy una persona apasionada, proactiva busco formas diferentes de aprender y desenvolverme me gusta mucho todo lo que tiene que ver con la tecnología y todos los dias aprendo cosas nuevas, actualmente soy freelancer hago pequeños proyectos <b>Frontend</b>, ya sea personales o para algunos clientes con el fin de adquirir una mayor experiencia.</p>
+                <div class="text-column-3">
+                    <ol>
+                        <li>Puntualidad</li>
+                        <li> Responsabilidad</li>
+                        <li>Orden a la hora de trabajar</li>
+                        <li>Capacidad para tomar decisiones</li>
+                        <li>Capacidad para resolver problemas</li>
+                        <li>Empatía e Iniciativa</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="skills">
+                <h3 class="skills__title">SKILLS</h3>
+                <div class="skills__container">
+                    <img src="img/iconos/html-5.svg" alt="html5"/>
+                    <img src="img/iconos/css-3.svg" alt="css3">
+                    <img src="img/iconos/javascript.svg" alt="javascript">
+                    <img src="img/iconos/react.svg" alt="react">
+                    <img src="img/iconos/bootstrap.svg" alt="bootstrap">
+                    <img src="img/iconos/tailwindcss.svg" alt="tailwindcss">
+                    <img src="img/iconos/git.svg" alt="git">
+                    <img src="img/iconos/github.svg" alt="github">
+                    <img src="img/iconos/npm.svg" alt="npm">
+                    <!--<img src="img/iconos/firebase.svg" alt="firebase">
+                    <img src="img/iconos/redux.svg" alt="redux">
+                    <img src="img/iconos/material-ui.svg" alt="material-ui">-->
+                </div>
+            </div>
+            <a rel="noopener noreferrer" class="boton" href="Cv_Xavier_Gaspata.pdf" target="_blank">Descargar CV</a>
         </div>
     </div>
 </section>
+
+
 
 <!--========================
     SECTION PROYECTOS
@@ -183,7 +208,7 @@
 --------BTN SCROLL -------
 =======================-->
 <button class="scroll__top-boton hidden">
-    <i class='bx bx-up-arrow' ></i>
+    <i class='bx bx-rocket' style='color:#0cc8e9'  ></i>
 </button>
 
     
@@ -197,6 +222,7 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 <script src="js/app.js" type="module"></script>
 </body>
 </html>

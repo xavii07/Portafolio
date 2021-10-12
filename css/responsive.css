@@ -192,6 +192,18 @@
   scroll-margin-top: 4.5rem;
 }
 
+
+.text-column-3 ol {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-column-3 ol > li {
+  width: 50%;
+}
+
+
+
   
 }
 
@@ -200,6 +212,19 @@
 ============================================*/
 
 @media screen and (min-width:992px) {
+  .menu__enlaces::after {
+    content: "";
+    display: block;
+    height:3px;
+    width:0;
+    background-color:transparent; 
+    transition:width 0.7s ease, background-color 0.5s ease;
+  }
+  
+  .menu__enlaces:hover::after {
+    width:100%;
+    background-color: #fafbfd;
+  }
 
   .informacion__saludo {
     font-size: 3.4rem;
@@ -227,14 +252,17 @@
 
  .about__descripcion {
   font-size: 18px;
-  width: 50%;
+  width: 70%;
+  text-align: justify;
+  align-self: flex-start;
  }
 
  .about__contimg-city {
-   width: 50%;
+   width: 20%;
    display: flex;
    flex-direction: column;
    align-items: center;
+   flex-direction: end;
  }
 
  .about__cont_cont {
@@ -242,14 +270,13 @@
   }
   
   .about__img {
-    margin: 0 auto;
     width: 200px;
     height: 200px;
+    shape-outside: circle();
   }
 
 .about__prof {
   text-align: start;
-  
 }
 
   /*---------FORMULARIO---*/
@@ -278,6 +305,7 @@
  }
 
 }
+
 
 
 /*==========================================
