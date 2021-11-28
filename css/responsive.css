@@ -1,8 +1,4 @@
-
-/*=========================
- *  MEDIA QUERIES DEL MENU
- * =========================*/
- @media screen and (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
   .menu__items {
     margin: 5px 0 0 0;
   }
@@ -27,19 +23,6 @@
   }
 }
 
-
-/*==========================================
-----------MÉTODO MOBILE FIRST---------------
-============================================*/
-
-@media screen and (min-width:450px) {
-  
-}
-
-/*==========================================
-------------PANTALLAS > 768-----------------
-============================================*/
-
 @media screen and (min-width:768px) {
 
   .menu__icono {
@@ -59,9 +42,8 @@
   }
 
   .informacion {
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(67, 67, 67, 0.4)), url(../img/about-me/fondo2.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(67, 67, 67, 0.79)), url(../img/about-me/fondo2.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000000;  
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.99), rgba(67, 67, 67, 0.79)), url(../img/about-me/fondo2.jpeg);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -95,10 +77,6 @@
     width: 100%;
   }
 
-  /*--========================
- * SECTION ABOUT ME
- * ==========================*/
-
  .about__prof { 
    font-size: 17px;
  }
@@ -116,7 +94,6 @@
   width: 150px;
   height: 150px;
 }
-
 
   .proyectos__img {
     opacity: 0.8;
@@ -139,7 +116,6 @@
     margin: 10px auto;
   }
 
-  /*---------FORMULARIO---*/
   .formulario__form {
     width: 80%;
   }
@@ -196,15 +172,8 @@
 .text-column-3 ol > li {
   width: 50%;
 }
-
-
-
-  
 }
 
-/*==========================================
-------------PANTALLAS > 992-----------------
-============================================*/
 
 @media screen and (min-width:992px) {
   .menu__enlaces::after {
@@ -234,9 +203,6 @@
     width: 32%;
   }
 
-  /*--========================
- * SECTION ABOUT ME
- * ==========================*/
 
  .about__cont {
   flex-direction: row;
@@ -274,7 +240,7 @@
   text-align: start;
 }
 
-  /*---------FORMULARIO---*/
+
   .formulario__form {
     width: 50%;
   }
@@ -301,12 +267,6 @@
 
 }
 
-
-
-/*==========================================
-------------PANTALLAS > 1200-----------------
-============================================*/
-
 @media screen and (min-width:1200px) {
 
   .menu {
@@ -317,8 +277,6 @@
     font-size: 18px;
   }
 
-
-
   .footer {
     height: 120px;
   }
@@ -326,9 +284,4 @@
   .footer__imagen {
     width: 100px;
  }
-
-
 }
-
-
-

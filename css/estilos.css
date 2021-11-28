@@ -1,11 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap'); /*'Pangolin', cursive;*/
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@900&display=swap');
-
-
-/*=============================
-------VARIABLES GLOBALES--------
-==============================*/
-
 :root {
   --colorPrincipal: rgb(12, 200, 233);
   --fontTitulos:'Recursive', sans-serif;
@@ -22,11 +14,6 @@ html {
 [id] {
   scroll-margin-top: 3.5rem;
 }
-
-
-/*=======================
- *  MENU DE NAVEGACION
- * ========================*/ 
 
 .menu {
   background: rgb(17, 19, 20);
@@ -89,9 +76,6 @@ html {
   color: #fff;
 }
 
-/*------------------------------
---------BOTON SCROLL TOP-----
-===============================*/
 .scroll__top-boton {
   position: fixed;
   z-index: 999;
@@ -106,16 +90,10 @@ html {
   font-size: 2rem;
 }
 
-
-
 .hidden {
   visibility: hidden;
   opacity: 0;
 }
-
-/*------------------------------
---------INFORMACION HEADER-----
-===============================*/
 
 .informacion {
   width: 100%;
@@ -138,7 +116,6 @@ html {
   width: 40%;
   margin: 0 auto;
 }
-
 
 .informacion__saludo {
   font-size: 3rem;
@@ -169,18 +146,6 @@ html {
   display: none;
 }
 
-
-
-
-
-
-
-
-
-/*--========================
- * SECTION ABOUT ME
- * ==========================*/
- 
 .about {
   margin: auto;
   width: 100%;
@@ -237,8 +202,6 @@ html {
 .boton:hover {
   box-shadow: 3px 0 20px 5px rgba(163,163,163,.2);
 }
-
-
 
 .titulos {
   font-family: var(--fontTitulos);
@@ -299,29 +262,6 @@ html {
   margin-left:1.5rem ;
   margin-top: 2rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--========================
- * PROYECTOS  
- * ==========================*/
  .proyectos {
   width: 100%;
   height: 100%;
