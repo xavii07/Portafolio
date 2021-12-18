@@ -226,6 +226,57 @@ html {
   font-family: var(--fontTitulos);
 }
 
+.skills__container {
+  width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.skills__list {
+  list-style-type: none;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 30px;
+  transition: .4s;
+  background-color: #333;
+  display: flex;
+  margin: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  cursor: grabbing;
+}
+
+.skills__list:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--colorPrincipal);
+  transform: scale(.9);
+  z-index: -1;
+  transition: .4s;
+}
+
+.skills__list:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--colorPrincipal);
+}
+
+.skills__list:hover {
+  color: var(--colorPrincipal);
+  box-shadow: 0 0 5px var(--colorPrincipal);
+  text-shadow: 0 0 5px var(--colorPrincipal);
+}
+
 .text-column-3 {
   margin-left: 1rem;
   margin-top:1rem;
@@ -247,21 +298,6 @@ html {
   background-position: center;
 }
 
-.skills__container {
-  width: inherit;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.skills__container > img {
-  width: 30px;
-  height: auto;
-  margin-left:1.5rem ;
-  margin-top: 2rem;
-}
  .proyectos {
   width: 100%;
   height: 100%;
@@ -292,15 +328,6 @@ html {
    width: 100%;
    vertical-align: top;
  }
-
-
-
-
-
- 
-/*--========================
- * CONTACTO
- * ==========================*/
 
  .formulario {
   background: #000000; 
@@ -403,7 +430,6 @@ html {
    display: block;
  }
 
- /*-----Estilos para validar los formularios----*/
  .formulario__grupo-correcto .formulario__validacion-estado{
     color:#1ed12d;
     opacity: 1;
@@ -428,12 +454,6 @@ html {
    line-height: 1.5rem !important;
    resize: none;
  }
-
- 
-
- 
-
- 
 
  .redes {
    width: 70%;
@@ -460,9 +480,6 @@ html {
     padding: 25px;
  }
 
-
-
- /*----COLORES DE REDES SOCIALES*/
  .bxl-facebook {
   color:#fff;
 }
@@ -471,7 +488,7 @@ html {
   color:#fff;
 }
 
-.bxl-github {
+.redes__link .bxl-github {
   color:#fff;
 }
 
@@ -487,18 +504,14 @@ html {
   color:#1da1f2;
 }
 
-.bxl-github:hover {
+.redes__link .bxl-github:hover {
   color:#6e5494;
 }
 
 .bxl-linkedin-square:hover {
   color:#0077b5;
 }
- 
-  
- /*===============================
- ----------FOOOTER----------------
- =============================== */
+
  .footer {
    background-color: #000;
    width: 100%;

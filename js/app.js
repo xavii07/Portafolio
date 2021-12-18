@@ -13,6 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
 	typed()
 	formValidation()
 	skillsAnimation(".scroll__top-boton i", "bx-fade-down")
-	skillsAnimation(".skills i", "bx-fade-right")
 	gsa()
 })
