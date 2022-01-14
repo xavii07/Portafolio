@@ -1,7 +1,8 @@
 :root {
   --colorPrincipal: rgb(12, 200, 233);
-  --fontTitulos:'Recursive', sans-serif;
-  --fontTexto:'Pangolin', cursive;
+  --fontTitulos:'Recursive', Arial, Helvetica, Verdana;
+  --fontTexto:'Pangolin', Arial, Helvetica, Verdana;
+  --hoverIcon: rgb(66, 218, 245);
 }
 
 html {
@@ -126,21 +127,28 @@ html {
   -webkit-background-clip: text;
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
-  /*color:var(--colorPrincipal);*/
   letter-spacing: 0.3rem;
-  line-height: 4rem;
+  line-height: 5rem;
   font-family: var(--fontTitulos);
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.2),
-              -2px -2px 2px rgba(0,0,0,0.2);
 }
 
 .informacion__texto {
   font-size: 1rem;
   color:var(--colorPrincipal);
-  line-height: 2rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5),
-              -2px -2px 4px rgba(0,0,0,0.5);
+  line-height: 3rem;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: var(--fontTitulos);
+  letter-spacing: 3px;
+  background: linear-gradient(-120deg, #e78f79 20%, var(--colorPrincipal) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
+
+
 
 .informacion__imgcontain {
   display: none;
@@ -187,20 +195,23 @@ html {
 
 .boton {
   background-color: rgb(15, 15, 15);
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
   border-radius: 5px;
   display:inline-block;
   outline: none;
-  padding:0.6rem 2rem;
+  padding: 1rem 2rem;
   font-family: var(--fontTexto);
   color:var(--colorPrincipal);
   border: none;
+  font-weight: bold;
+  letter-spacing: 2px;
   transition: box-shadow 0.5s ease;
+  text-align: center;
 }
 
 .boton:hover {
-  box-shadow: 3px 0 20px 5px rgba(163,163,163,.2);
+  box-shadow: -1px 1px 25px 6px rgba(133, 206, 216, 0.68);
 }
 
 .titulos {
@@ -252,6 +263,11 @@ html {
   cursor: grabbing;
 }
 
+.skills__list a {
+  color: var(--colorPrincipal);
+  text-decoration: none;
+}
+
 .skills__list:before {
   content: "";
   position: absolute;
@@ -260,7 +276,7 @@ html {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--colorPrincipal);
+  background-color: var(--hoverIcon);
   transform: scale(.9);
   z-index: -1;
   transition: .4s;
@@ -268,18 +284,18 @@ html {
 
 .skills__list:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px var(--colorPrincipal);
+  box-shadow: 0 0 15px var(--hoverIcon);
 }
 
 .skills__list:hover {
-  color: var(--colorPrincipal);
-  box-shadow: 0 0 5px var(--colorPrincipal);
-  text-shadow: 0 0 5px var(--colorPrincipal);
+  color: var(--hoverIcon);
+  box-shadow: 0 0 5px var(--hoverIcon);
+  text-shadow: 0 0 5px var(--hoverIcon);
 }
 
 .text-column-3 {
   margin-left: 1rem;
-  margin-top:1rem;
+  margin-top: 3rem;
 }
 
 .text-column-3 ol > li {
@@ -315,14 +331,62 @@ html {
   }
 
  .proyectos__cajas {
-   width: 45%;
+   width: 70%;
    margin-top: 2rem;
-   opacity: 0.5;
+   position: relative;
   }
+
   
-  .proyectos__cajas:hover {
+  .proyectos__desc__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease, background-color 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+
+  .proyectos__cajas:hover .proyectos__desc__container {
     opacity: 1;
-   }
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  .proyectos__desc__infocontainer {
+    background-color: rgb(129, 231, 249);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; 
+    border-radius: 3px;
+  }
+
+  .proyectos__desc__titulo {
+    
+    flex-grow: 1;
+    color: #000;
+    font-family: var(--fontTitulos);
+  }
+
+  .proyectos__desc__descrip {
+    font-size: 0.8rem;
+    text-align: justify;
+    
+    flex-grow: 1;
+    align-content: center;
+    color: #000;
+  }
+
+
+  
   .proyectos__img {
    border-radius: 0.2rem;
    width: 100%;
